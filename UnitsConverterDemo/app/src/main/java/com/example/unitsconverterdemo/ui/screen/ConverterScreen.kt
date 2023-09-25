@@ -16,6 +16,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -31,6 +32,7 @@ fun ConverterScreen() {
     val km_yard = 1093.613
     val km_foot = 3280.84
 
+    val context = LocalContext.current
 
     var inputText by rememberSaveable {
         mutableStateOf("")
@@ -86,7 +88,7 @@ fun ConverterScreen() {
                 else
                 {
                     // result = stringResource(R.string.need_give_value)
-                     result = "Adjon meg értéket!"
+                     result = context.getString(R.string.need_give_value)
                 }
             }) {
                 Text(text = "km -> miles")
@@ -99,7 +101,7 @@ fun ConverterScreen() {
                 else
                 {
                     // result = stringResource(R.string.need_give_value)
-                    result = "Adjon meg értéket!"
+                    result = context.getString(R.string.need_give_value)
                 }
             }) {
                 Text(text = "km -> yard")
@@ -112,7 +114,7 @@ fun ConverterScreen() {
                 else
                 {
                     // result = stringResource(R.string.need_give_value)
-                    result = "Adjon meg értéket!"
+                    result = context.getString(R.string.need_give_value)
                 }
             }) {
                 Text(text = "km -> foot")
