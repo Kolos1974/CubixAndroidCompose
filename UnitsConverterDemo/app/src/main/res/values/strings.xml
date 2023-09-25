@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">UnitsConverterDemo</string>
+    <string name="need_give_value">Adjon meg értéket!</string>
+</resources>
