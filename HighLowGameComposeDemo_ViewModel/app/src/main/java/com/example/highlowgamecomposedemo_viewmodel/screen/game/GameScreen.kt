@@ -1,10 +1,9 @@
-package com.example.highlowgamecomposedemo_viewmodel.screen
+package com.example.highlowgamecomposedemo_viewmodel.screen.game
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Warning
@@ -34,7 +33,6 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.highlowgamecomposedemo_viewmodel.R
 import com.example.highlowgamecomposedemo_viewmodel.ui.theme.HighLowGameComposeDemo_ViewModelTheme
-import kotlin.random.Random
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
